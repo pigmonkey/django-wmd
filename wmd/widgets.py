@@ -3,8 +3,15 @@ from django.conf import settings
 from django.utils.safestring import mark_safe
 
 class WMDWidget(forms.Textarea):
-    def __init__(self, *args, **kwargs):
-        attrs = kwargs.setdefault('attrs', {'class': 'vLargeTextField wmd-panel'})
+    def __init__(self, large=False, *args, **kwargs):
+        if large:
+            attrs = kwargs.setdefault('attrs', {
+                'class': 'extraLargeTextField wmd-panel',
+            })
+        else:
+            attrs = kwargs.setdefault('attrs', {
+                'class': 'vLargeTextField wmd-panel',
+            })
         super(WMDWidget, self).__init__(*args, **kwargs)
 
     @property

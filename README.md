@@ -39,3 +39,13 @@ Then tell Django to use the `ModelForm` on the admin site.
         form = PostForm
         ...
     admin.site.register(Post, PostAdmin)
+
+### Options
+
+The widget currently takes one option: `large`. If set to true, this will make the widgetized textarea larger than usual. This is much nicer for writing lengthy content, such as blog posts.
+
+An example:
+
+    class PostForm(forms.ModelForm):
+        body = forms.CharField(widget=WMDWidget(large=True)
+        ...

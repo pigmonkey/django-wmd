@@ -1,5 +1,12 @@
+.extraLargeTextField {
+    height: 500px;
+    width: 800px;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
 .wmd-panel {
-    margin-left: 9.5em;
+    margin-left: 108px;
 }
 
 #wmd-button-bar {
