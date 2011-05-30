@@ -32,7 +32,7 @@ class WMDWidget(forms.Textarea):
                     input: "%s",
                     button_bar: "wmd-button-bar",
                     preview: "wmd-preview",
-                    helpLink: "http://googe.com"
+                    helpLink: "http://daringfireball.net/projects/markdown/syntax"
             });
             </script>
             ''' % (attrs['id']))
