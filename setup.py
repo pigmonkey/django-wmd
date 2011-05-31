@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name = 'Django WMD',
+    name = 'django-wmd',
     version = '0.1',
     description = 'A resuable Django app for a Markdown WMD editor widget.',
     long_description = open('README.md').read(),
