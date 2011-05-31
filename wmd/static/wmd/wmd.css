@@ -13,25 +13,24 @@
     width: 618px;
 }
 
-#wmd-preview,
-#wmd-preview-label {
-    margin-top: 10px;
+#wmd-preview {
+    margin-top: 20px;
 }
 
-#wmd-preview { 
+#wmd-preview-area { 
     border: 1px solid #ccc;
     height: 150px;
-    padding: 0 10px 0 10px;
+    padding: 0 5px 0 5px;
     width: 598px;
     overflow: auto;
 }
 
-#wmd-preview p {
-    margin-left: 0;
+form .aligned #wmd-preview-area p {
     padding-left: 0;
+    margin-left: 0;
 }
 
-#wmd-preview h2 {
+.module #wmd-preview-area h2 {
     background: none;
     color: #666;
     font-size: 16px;

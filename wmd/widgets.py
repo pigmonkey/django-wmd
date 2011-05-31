@@ -25,13 +25,15 @@ class WMDWidget(forms.Textarea):
         rendered = mark_safe(u'<div id="wmd-button-bar" class="wmd-panel"></div>')
         rendered += super(WMDWidget, self).render(name, value, attrs)
         return rendered + mark_safe(u'''
-            <div id="wmd-preview-label">Preview:</div>
-            <div id='wmd-preview' class="wmd-panel"></div>
+            <div id="wmd-preview">
+                <div id="wmd-preview-label">Preview:</div>
+                <div id='wmd-preview-area' class="wmd-panel"></div>
+            </div>
             <script type="text/javascript">
                 setup_wmd({
                     input: "%s",
                     button_bar: "wmd-button-bar",
-                    preview: "wmd-preview",
+                    preview: "wmd-preview-area",
                     helpLink: "http://daringfireball.net/projects/markdown/syntax"
             });
             </script>
